@@ -1,0 +1,10 @@
+<!DOCTYPE html><html><head><script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script>
+function initMap() {
+  var loc = {lat: 12.9716, lng: 77.5946};
+  var map = new google.maps.Map(document.getElementById('map'), {zoom: 12, center: loc});
+  var marker = new google.maps.Marker({position: loc, map: map});
+}
+</script></head>
+<body onload="initMap()"><h2>Live Tracking</h2><div id="map" style="height:400px;"></div>
+<a href="/dashboard">Back</a></body></html>
